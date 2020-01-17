@@ -1,0 +1,39 @@
+<html>
+<link rel="stylesheet" href="calcss.css">
+<script>
+function call(x)
+{
+document.form.num.value+=x;
+}
+</script>
+<body>
+<form name="form">
+<div class="d">
+<input type="text" name="num" id="val">
+<br>
+<input type="button" value="+" class="b" onclick=call('+')>
+<input type="button" value=" -" class="b" onclick=call('-')>
+<input type="button" value="*" class="b" onclick=call('*')>
+<br>
+<input type="button" value="1" class="b" onclick=call(1)>
+<input type="button" value="2" class="b" onclick=call(2)>
+<input type="button" value="3"  class="b" onclick=call(3)>
+<br>
+<input type="button" value="4" class="b" onclick=call(4)>
+<input type="button" value="5" class="b" onclick=call(5)>
+<input type="button" value="6" class="b" onclick=call(6)>
+<br>
+<input type="button" value="7" class="b" onclick=call(7)>
+<input type="button" value="8" class="b" onclick=call(8)>
+<input type="button" value="9" class="b" onclick=call(9)>
+<br>
+<input type="button" value=" /" class="b" onclick=call('/')>
+<input type="button" value="0" class="b" onclick=call(0)>
+<input type="button" value="=" class="b" onclick="num.value=eval(num.value)">
+<br>
+<br>
+<input type="button" value="clear" class="c" onclick="num.value=''">
+</div>
+</form>
+</body>
+</html>
